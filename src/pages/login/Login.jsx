@@ -23,7 +23,7 @@ function Login() {
     login(email, password);
   };
 
-  const { user } = useAuthContext();
+  const { user } = useAuthContext(); // 반환하는거 {user: null, isAuthReady: true, dispatch: ƒ}
 
   if (user) {
     return <Navigate replace to="/" />
